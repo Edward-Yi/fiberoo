@@ -11,3 +11,8 @@ function numToString(nums) {
   return _.map(nums, function (num) { return `${num}`; });
 }
 console.log(numToString(fib()));
+
+function numEvenNums(nums) {
+  return _.countBy(nums, function (num) { return num % 2 === 0; });
+}
+console.log(numEvenNums(fib()));
