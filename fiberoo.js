@@ -13,6 +13,7 @@ function numToString(nums) {
 console.log(numToString(fib()));
 
 function numEvenNums(nums) {
-  return _.countBy(nums, function (num) { return num % 2 === 0; });
+  const list = _.filter(nums, function (num) { return num % 2 === 0; });
+  return list.length;
 }
 console.log(numEvenNums(fib()));
